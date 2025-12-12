@@ -1,0 +1,9 @@
+LIBRARY kernel32
+EXPORTS
+GetConsoleMode
+GetStdHandle
+GetLastError
+GetFileInformationByHandleEx
+WriteFile
+GetCommandLineA
+
