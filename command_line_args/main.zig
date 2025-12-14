@@ -5,6 +5,7 @@ const printf = io.stdout.printf;
 
 pub fn main() -> %void {
     var args_list = std.ArrayList(?%[]u8).init(&std.mem.c_allocator);
+    defer args_list.deinit();
     var args = os.args();
 
 populate:
